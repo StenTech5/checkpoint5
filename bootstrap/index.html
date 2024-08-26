@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fictional Restaurant</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <style>
+      .hero {
+        background: url("https://static.vecteezy.com/system/resources/thumbnails/031/415/172/small_2x/top-view-delicious-food-plate-on-a-black-background-ai-generated-photo.jpg") no-repeat center center;
+        background-size: cover;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+      }
+
+      .nav-link:hover{
+        color: #134330;
+        background-color: #ffff;
+        border-radius: 5px;
+      }
+
+    .hero-h1{
+        font-size: 70px;
+      }
+      .hero-p{
+        font-size: 30px;
+        letter-spacing: 5px;
+      }
+
+      .card {
+            height: 100%;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+        }
+        .btn {
+            margin-top: auto;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="home"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success pb-3 pt-3  sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-light" href="#">7TH HEAVEN KITCHEN</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active text-warning fw-bold" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-h1">Welcome to Our Restaurant</h1>
+        <p class="hero-p ">Experience the finest cuisine in town</p>
+        <a  id="menu"href="#" class="btn btn-success p-2">Explore Menu</a>
+      </div>
+    </section>
+
+    <section class="menu py-5">
+      <div class="container">
+        <h2 class="text-center mb-4 text-bg-success w-25 mx-auto rounded-2 pb-2 text">Our Menu</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <div class=" card text-center rounded-2">
+              <img src="https://www.eatingwell.com/thmb/fT-sHqVlgF3-bKn4fg_4RVhF2Gw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/7725524-353a378914d143929280d85059469d4e.jpg" class="card-img-top rounded-circle img-thumbnail w-75 m-auto mt-3" alt="Dish 1" />
+              <div class="card-body">
+                <h5 class="card-title">Roasted Chicken</h5>
+                <p class="card-text">Savory roasted chicken, marinated in herbs and spices, served with a side of garlic mashed potatoes and seasonal vegetables. A perfect blend of comfort and flavor in every bite.</p>
+                <p class="card-text fw-semibold">$12.99</p>
+                <a href="#" class="btn btn-success">Order now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class=" card text-center rounded-2">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4_uOzll50MXEC3iXqS9DPsN60y1mYXJYQXA&s" class="card-img-top rounded-circle img-thumbnail w-75 m-auto mt-3" alt="Dish 2" />
+              <div class="card-body">
+                <h5 class="card-title">Grilled Salmon</h5>
+                <p class="card-text">Grilled Salmon with Lemon Butter Sauce "Delicate, flaky salmon grilled to perfection and drizzled with a tangy lemon butter sauce, served alongside roasted asparagus and wild rice. A fresh and flavorful delight.</p>
+                <p class="card-text fw-semibold">$9.99</p>
+                <a href="#" class="btn btn-success">Order now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class=" card text-center rounded-2">
+              <img src="https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-square640-v2.jpg" class="card-img-top rounded-circle img-thumbnail w-75 m-auto mt-3" alt="Dish 3" />
+              <div class="card-body">
+                <h5 class="card-title">Spaghetti Carbonara</h5>
+                <p class="card-text">Classic Italian pasta tossed in a creamy sauce made with eggs, parmesan, and crispy pancetta. A rich, comforting dish with a hint of black pepper and fresh parsley.</p>
+                <p class="card-text fw-semibold">$14.99</p>
+                <a href="#" class="btn btn-success">Order now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class=" card text-center rounded-2">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVQ3JsWL6QRievB7pMZlFmcqSdCVg_qGhOjw&s" class="card-img-top rounded-circle img-thumbnail w-75 m-auto mt-3" alt="Dish 4" />
+              <div class="card-body">
+                <h5 class="card-title">Beef Tacos with Pico de Gallo</h5>
+                <p class="card-text">Tender, seasoned beef wrapped in soft corn tortillas, topped with fresh pico de gallo, shredded lettuce, and a dollop of sour cream. A vibrant and satisfying fiesta of flavors.</p>
+                <p class="card-text fw-semibold">$17.99</p>
+                <a href="#" class="btn btn-success">Order now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us py-5 bg-light" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5NjeAz0BFpxWJ0pnTeLDEDBYXo6xmbIGXqA&s "
+              class="img-fluid img-thumbnail rounded-3 w-75"
+              alt="Restaurant Interior"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2>About Us</h2>
+            <p>
+                Welcome to 7th heaven kitchen, where passion for great food meets a warm, inviting atmosphere. Our culinary team crafts each dish with the freshest ingredients and a dash of creativity, offering a delightful dining experience. Whether you're here for a quick bite or a leisurely meal, we promise delicious flavors and impeccable service. Come join us and savor the essence of fine dining.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <h2 class="text-center mb-4 text-bg-success w-25 mx-auto rounded-2 pb-2">Contact Us</h2>
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-25">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>&copy; 2024 7th Heaven Kitchen. All Rights Reserved.</p>
+        <div>
+          <a href="#" class="text-white mx-2"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white mx-2"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
